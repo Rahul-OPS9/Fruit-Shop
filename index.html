@@ -4,13 +4,21 @@
         <title>Fruit Shop owned by R.S Ltd </title>
     </head>
     <body>
-      
+   <form action="https://sheetdb.io/api/v1/pcsn4k3sstql1" method="post"> 
       <p id="Result"> </p>
       <p id="price"> </p>
       <p id="Test"> </p>
-      <p style="color: blue;"  id="est"></p>
+      <input type="text" id="est" name="data[Bill]" style="color: blue;">
       <p id="%"
-      <p id="Discount"> </p>
+      <p name="data[N]" id="Discount"> </p>     
+      <input type="text" placeholder="Your Name" name="data[USERNAME]">
+      <input type="text" placeholder="Account Number" name="data[ACCOUNT NO]]">
+      <input type="number" placeholder="Age" name="data[AGE]]">
+      <input type="text" placeholder="Country" name="data[COUNTRY]"> </br>
+   <div style="padding: 20px;border-radius: 5px;border-color: aqua;">
+      <input type="submit" value="Upload Data" style="padding:10px; background-color: aquamarine; font-weight: bold;">
+   </div>
+   </form> 
         
         <script>
 
@@ -25,7 +33,7 @@
                 let I =prompt("Enter  discount")
                 let d = x*y-x*y*I/100 
                 document.getElementById("%").innerHTML=("Discount:     "+I+"%");
-                document.getElementById("Discount").innerHTML=("Price after Dicount:    "+d)
+                document.getElementById("Discount").innerHTML=("Price after Discount:"+d)
             }
                // document.write("I am Rahul")
             //console.log(alert("The List of fruits are as follow:\n 1. Mangoes 50 $\n 2. Papyas 70 $\n 3. Watermelon 99 $"))
@@ -38,7 +46,7 @@
               else if(a<3 && a>1){ alert("The Papays are 70 $"); let b = 70}
               else if(a<4 && a>2){ alert("The Watermelons are 99 $");let b = 99}
             //  else if(a  3 ){ alert("Good Choice ! Dragoan Fruit's are $350")}
-             else {alert("Inavalid value")}
+             else {alert("Inavalid value ! Sorry :( Fruits isn't Avail in this range")}
             
              document.getElementById("Result").innerHTML=("Fuit Code "+ a)
              
